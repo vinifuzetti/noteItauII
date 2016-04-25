@@ -14,3 +14,6 @@ NPM libs para utilização
 Dicas para modularizar:
 	Tirar os .get (rotas) do arq principal da api
 	Colocar dentro de 'controlers' - rotas
+
+	O index.js serve apenas para subir a aplic
+	Criar arq de configurações

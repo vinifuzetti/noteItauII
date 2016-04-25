@@ -17,3 +17,10 @@ Dicas para modularizar:
 
 	O index.js serve apenas para subir a aplic
 	Criar arq de configurações
+
+HTTP: 
+	Recursos usados 
+	Headers (Content Type Negociation / JSON, XML
+	Status Code
+	URI
+
