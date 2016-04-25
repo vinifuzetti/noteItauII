@@ -1,0 +1,19 @@
+NODE JS
+
+	Assincrono, gerando performance;
+	Bom com I/O;
+	Pouco rentavel na necessidade de muita memoria;
+	Engine JS ( V8 - Chrome);
+
+JavaScript: 
+	Feito para WEB;
+	Facil aprendizado;
+	
+NPM libs para utilização
+
+Dicas para modularizar:
+	Tirar os .get (rotas) do arq principal da api
+	Colocar dentro de 'controlers' - rotas
+
+	O index.js serve apenas para subir a aplic
+	Criar arq de configurações

@@ -1,0 +1,23 @@
+{
+  "name": "payfast",
+  "version": "0.0.0",
+  "description": "Curso Caelum de API em Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinifuzetti/noteItauII.git"
+  },
+  "author": "Vinicius R Fuzetti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinifuzetti/noteItauII/issues"
+  },
+  "homepage": "https://github.com/vinifuzetti/noteItauII",
+  "dependencies": {
+    "express": "~4.13.4",
+    "express-load": "~1.1.15"
+  }
+}
