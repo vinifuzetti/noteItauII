@@ -13,6 +13,7 @@ module.exports = function(){
   //carrega as rotas sem precisar dar require do express nas rotas
   load('controllers', {cwd: 'app'})
         .then('infra')
+        .then('servicos')
         .into(app);
 
   return app;
