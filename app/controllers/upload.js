@@ -3,9 +3,10 @@ var	zlib	=	require('zlib');
 
 module.exports	=	function(app)	{
 
-  app.post("/upload/gzip",function(req,	res)	{
+  app.post("/upload/gzip/:v",function(req,	res)	{
+    var version = req.headers.v;
     var	arquivo	=	req.headers.filename;
-    console.log('arquivo recebido:	'	+	arquivo);
+    console.log('Arquivo recebido:	'	+	arquivo + 'na versão do app ' + version);
 
     req.pipe(zlib.createGunzip())
       .pipe(fs.createWriteStream("files/"	+	arquivo))
