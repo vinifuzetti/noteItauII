@@ -4,6 +4,7 @@ var bp = require('body-parser');
 var validator = require('express-validator');
 var	morgan	=	require('morgan');
 var	logger	=	require('../app/infra/logger.js');
+var	cors	=	require('cors');
 
 module.exports = function(){
   var app = express();
@@ -17,6 +18,12 @@ module.exports = function(){
         logger.info(message)
       }
     }
+  }));
+  //aceita requisições apenas do origin declarado abaixo
+  app.use(cors({
+    origin:	'http://localhost:3001',
+    methods:	["GET",	"POST",	"PUT",	"DELETE"],
+    allowedHeaders:	"Content-type"
   }));
 
   //carrega as rotas sem precisar dar require do express nas rotas
